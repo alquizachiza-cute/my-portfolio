@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5efff;
+    color: #4f4f6b;
+}
+
+/* Header */
+header {
+    background: #d8c4f0;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: #8a2be2;
+    font-size: 48px;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background: #cdb7e9;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4f4f6b;
+    margin: 0 25px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8a2be2;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #d8c4f0;
+}
+
+.text h2 {
+    color: #8a2be2;
+    font-size: 36px;
+}
+
+.text p {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Project Images */
+.project img {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.project img.portrait {
+    max-width: 300px;
+    height: 400px;
+    object-position: top;
+}
+
+/* Footer */
+footer {
+    background: #cdb7e9;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    body { font-size: 14px; }
+    nav { padding: 10px; }
+    nav a { display: block; margin: 10px; }
+    .profile { flex-direction: column; text-align: center; }
+    .project img { max-width: 100%; height: 200px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 22px; }
+}
